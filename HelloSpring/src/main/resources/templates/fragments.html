@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+    <title>Coding Events</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+
+</head>
+<body>
+
+<nav th:fragment="header">
+    <h1 th:text="${title}">Coding Events</h1>
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href = "/account/create">Create Account</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/account/delete">Delete Accounts</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/events">All Events</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/events/create">Create Event</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/events/delete">Delete Events</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/eventCategories">All Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/eventCategories/create">Create Category</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/tags">All Tags</a></li>
+        <li class="nav-item"><a class="nav-link" href = "/tags/create">Create Tag</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
